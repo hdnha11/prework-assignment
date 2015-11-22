@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-8">
+      <p id="notice" class="text-success"><%= notice %></p>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <h1>Nha's Blog</h1>
+  <blockquote class="blockquote">
+    <p>The prework assignment for CoderSchool's ruby class</p>
+  </blockquote>
+
+  <%= render @articles %>
+
+  <div class="row">
+    <div class="col-sm-8">
+      <%= link_to 'New Article', new_article_path, class: 'btn btn-primary btn-lg btn-block' %>
+    </div>
+  </div>
+</div>
